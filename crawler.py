@@ -59,4 +59,3 @@ crawler = AppCrawler('https://itunes.apple.com/br/app/clash-royale/id1053012308'
 crawler.crawl()
 for app in crawler.apps:
 	print(app)
-	
