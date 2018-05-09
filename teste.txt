@@ -1,1 +1,3 @@
-this is my first text from git
+this is my first text from git;
+
+segundo teste de commit;
