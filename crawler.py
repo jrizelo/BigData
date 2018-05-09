@@ -17,7 +17,7 @@ class AppCrawler:
 		pagina_inicial = requests.get(link)
 		arvore = html.fromstring(pagina_inicial.text)
 		
-		nome = arvore.xpath('//h1[@class="product-header__title"]/text()')[0]
+		nome = arvore.xpath('//h1[@class="product-header__title product-header__title--app-header"]/text()')[0]
 		desenvolvedor = arvore.xpath('//h2[@class="product-header__identity product-header__identity--app-header product-header__identity--spaced"]/a[@class="link"]/text()')[0]
 		links = arvore.xpath('//a[@class="we-lockup targeted-link l-column small-2 medium-3 large-2 ember-view"]/@href')
 		app = App(nome, desenvolvedor, links)
