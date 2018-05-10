@@ -1,3 +1,5 @@
 this is my first text from git;
 
 segundo teste de commit;
+
+terceiro teste de commit;
